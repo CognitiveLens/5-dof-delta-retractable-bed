@@ -16,14 +16,14 @@ Conventional 5-axis systems rely on a Trunnion design (U-shaped cradle). At a 90
 
 This design bypasses the limitation using a **Bi-Axial Linear-Vertical Cam Guide Mechanism (Dual-Plane Constrained Translation)**.
 
-![Full Assembly Front View](full_delta.png)
+![Full Assembly Front View](full_delta.jpg)
 *Figure 1: Front overview of the 1200mm Delta chassis with the Φ 400mm circular bed in home position.*
 
 ### Motion Execution:
 * **The Carriage Assembly:** The bed support structure does not rotate on a fixed physical pin. Instead, it is constrained by two sets of rollers translating along horizontal and vertical constraints.
 * **Actuation:** Driven by twin **T8 lead screws** coupled to dual **NEMA 17 stepper motors** (wired in parallel/synchronized natively via the Z-axis dual slot on a BTT Octopus control board).
 
-![Base Rail and T8 Lead Screw Assembly](base_drive.png)
+![Base Rail and T8 Lead Screw Assembly](base_drive.jpg)
 *Figure 2: Base layout showing the horizontal profile rails, T8 drive screws, and NEMA 17 stepper positioning.*
 
 * **The Continuous Axis (Theta):** Rotation is handled independently via a low-profile **Lazy Susan bearing plate**, driven by a stepper motor and locked rigidly during indexing using a **1/6 arc segment shoe brake**.
@@ -34,7 +34,7 @@ This design bypasses the limitation using a **Bi-Axial Linear-Vertical Cam Guide
 
 The physical backplane configuration shifts the rotation and tilting mechanics fully underneath the planar bed vector to maximize travel workspace.
 
-![Rear Mechanism Detail](rear_kinematics.png)
+![Rear Mechanism Detail](rear_kinematics.jpg)
 *Figure 3: Rear view of the tilting carriage. Note the central T8 driving column, custom 3D printed mechanical interfaces, and the coaxial Lazy Susan bearing integration.*
 
 ### Key Structural Attributes:
@@ -47,7 +47,7 @@ The physical backplane configuration shifts the rotation and tilting mechanics f
 
 The processing system embraces a raw, high-density **"functional over aesthetic"** deployment inside a dedicated ventilated metal case, maintaining total galvanic isolation between logic controllers and inductive coil loops.
 
-![Power Distribution and Logic Housing](electronics.png)
+![Power Distribution and Logic Housing](electronics.jpg)
 *Figure 4: Internal layout of the control cabinet featuring the 32-bit BTT mainboard, UART-configured TMC drivers, active Nidec cooling system, and secondary switching controllers.*
 
 * **Mainboard:** BigTreeTech (BTT) Octopus V1.1 (32-bit MCU architecture).
